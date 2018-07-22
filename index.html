@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <style>
+    body  {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("https://render.fineartamerica.com/images/rendered/default/flat/round-beach-towel/images-medium-5/washington-dc-sports-fan-recycled-vintage-license-plate-art-capitals-redskins-wizards-nationals-design-turnpike.jpg?&targetx=0&targety=0&imagewidth=788&imageheight=788&modelwidth=788&modelheight=788&backgroundcolor=F4F4F4&orientation=0");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+        color: white;
+        text-align: center;
+    }
+    img {
+        opacity: .3;
+        filter: alpha(opacity=30);
+    }
+    </style>
+</head>
+<body>
+    <h1>DC Sports Quiz</h1>
+    <h2>
+        <div>
+            <button id = "startClock">Let's Go</button>
+            <p><span id="timer"></span></p>
+        </div>
+    </h2>
+            <form name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false">
+                    <div class="question">
+                        <p><strong>Q1</strong>: What russian superstar is also known as "The Great Eight"?</p>
+                        <label>
+                            <input type="radio" name="group1" value="wrong">Kirk Cousins</label>
+                        <label>
+                            <input type="radio" name="group1" value="correct">Alexander Ovechkin</label>
+                        <label>
+                            <input type="radio" name="group1" value="wrong">Joe Gibbs</label>
+                        <label>
+                            <input type="radio" name="group1" value="wrong">Freddy Adu</label>
+                    </div>
+                    <div class="question">
+                        <p><strong>Q2</strong>: How many Super Bowl titles do the Redskins have?</p>
+                        <label>
+                            <input type="radio" name="group2" value="wrong">1</label>
+                        <label>
+                            <input type="radio" name="group2" value="wrong">2</label>
+                        <label>
+                            <input type="radio" name="group2" value="correct">3</label>
+                        <label>
+                            <input type="radio" name="group2" value="wrong">4</label>
+                    </div>
+                    <div class="question">
+                        <p><strong>Q3</strong>: Which team evenutally became the Washington Nationals?</p>
+                        <label>
+                            <input type="radio" name="group3" value="correct">Montreal Expos</label>
+                        <label>
+                            <input type="radio" name="group3" value="wrong">Minnesota Twins</label>
+                        <label>
+                            <input type="radio" name="group3" value="wrong">Washington Bullets</label>
+                        <label>
+                            <input type="radio" name="group3" value="wrong">Seattle Supersonics</label>
+                    </div>
+                    <div class="question">
+                        <p><strong>Q4</strong>:What college did John Wall play for? </p>
+                        <label>
+                            <input type="radio" name="group4" value="wrong">Georgetown</label>
+                        <label>
+                            <input type="radio" name="group4" value="wrong">Duke</label>
+                        <label>
+                            <input type="radio" name="group4" value="correct">Kentucky</label>
+                        <label>
+                            <input type="radio" name="group4" value="wrong">Louisville</label>
+                    </div>
+                    <div class="question">
+                        <p><strong>Q5</strong>: What Redskins running back scored a 43 yard touchdown run on 4th and 1, sealing the win in Super Bowl 27?</p>
+                        <label>
+                            <input type="radio" name="group5" value="correct">John "The Diesel" Riggins</label>
+                        <label>
+                            <input type="radio" name="group5" value="wrong">Mark "The Machine" Moseley</label>
+                        <label>
+                            <input type="radio" name="group5" value="wrong">Art "Smooth Sailing" Monk</label>
+                        <label>
+                            <input type="radio" name="group5" value="wrong">Joe "High Flying" Theismann</label>
+                    </div>
+                </br>
+                    <div>
+                        <button id = "submitQuiz" class="submit"  type="submit">Submit</button>
+                    </div>
+            </form>
+        
+</body>
+</html>
